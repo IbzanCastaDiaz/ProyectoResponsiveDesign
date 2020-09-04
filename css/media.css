@@ -1,0 +1,232 @@
+/* desktop first que empieces desde el MQ mas grande */
+/* breck point en cada uno de los media screen */
+
+
+@media screen and (max-width: 1023px) {
+    .event-list-title {
+      margin-left: 0;
+    }
+    .portfolio {
+      padding: 0;
+    }
+    .container {
+        padding: 0 1em;
+    }
+    .hero {
+      height: auto;
+      position: relative;
+      overflow: hidden;
+      padding: 2em;
+    }
+    .hero-image {
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+    h1 {
+      font-size: 2em;
+      z-index: 2;
+    }
+    .html-video {
+      width: 100%;
+      height: auto;
+      /* max-width: 100%; */
+    }
+    .youtube-video {
+      /* width: 100%;
+      height: auto; */
+      position: absolute;
+      top: 0;
+      bottom:0;
+      right: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      /* z-index:3; */
+    }
+    .flexible-video {
+      width: 100%;
+      height: 0;
+      padding-top: 56.25%;
+      background: blue;
+      position: relative;
+    }
+
+    .event {
+      width: auto;
+      flex-shrink: initial;
+  }
+  .event img video{
+      width: 100%;
+      max-height: 250px;
+      object-position: 25% 25%;
+  }
+
+
+    /* body {
+      border: 10px solid red;
+    } */
+  } 
+@media screen and (max-width: 767px) {
+    h2 {
+      font-size: 1.2em;
+      margin: .5em 0;
+    }
+    .burger-button{
+      display: block;
+    }
+    .header {
+      display: block;
+      height: auto;
+    }
+    .header ol {
+      display: initial;
+    }
+    .header ol li {
+      height: 50px;
+    }
+    .header a {
+      justify-content: center;
+      height: 40px;
+      font-size: 2em;
+      text-decoration: underline;
+      margin-bottom: 0.5em;
+    }
+    .header .logo{
+      text-align: center;
+    }
+    /* .hero {
+      height: auto;
+      position: relative;
+      overflow: hidden;
+      padding: 2em;
+    }
+    .hero-image {
+      position: absolute;
+      z-index: 1;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%; */
+    
+    .menu {
+      position: fixed;
+      background: rgba(5, 111, 255, 0.9);
+      z-index: 3;
+      top: 0;
+      left: -100vw;
+      /* para que abarque toda el area */
+      width: 100vw;
+      /* height: 100vh; */
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* animacion */
+      transition: 0.3s;
+    }
+    /* Cuando las clases no se separan con punto solo se activan las propiedades cuando se cumplen ambas clases */
+    .menu.is-active {
+      left: 0;
+    }
+    
+    
+    
+    .project {
+      display: block;
+    }
+    .project-imageContainer {
+      width: auto;
+      text-align: center;
+    }
+    .project-course, .project-date, .project-url {
+        margin: 0.3em 0;
+    }
+    .project-details {
+      width: auto;
+      font-size: 16px;
+    }
+    .project-title {
+        font-size: 1.5em;
+        margin-bottom: 0.3em;
+    }
+    .project-url {
+        font-size: 1em;
+    }
+    .project-course {
+        font-size: 0.7em;
+    }
+    .project-date {
+        font-size: 1em;
+    }
+    .project-description {
+        font-size: 1em;
+    }
+    .event {
+        width: auto;
+        flex-shrink: initial;
+    }
+    .event img {
+        width: 100%;
+        /* max-height: 250px; */
+        object-position: 25% 25%;
+    }
+    /* .contact {
+        height: auto;
+    } */
+}
+  
+@media screen and (max-width: 480px) {
+    h1 {
+      font-size: 1em;
+    }
+    .project-details {
+        width: auto;
+        font-size: 14px;
+    }
+    .event-detail {
+        /* El padre en la fuente tiene 16px, por tanto es funcinal usar proporciones em */
+        margin: -2em 0.5em 0.5em;
+        padding: 1em;
+    }
+    .contact {
+        height: auto;
+        padding: 1.5em 0;
+        text-align: center;
+        display: block;
+    }
+    .form-email button {
+        margin: 1em auto;
+    }
+    .form-email h3 {
+        margin-top: 0;
+    }
+    .footer {
+        display: block;
+        text-align: center;
+        border: 1px solid transparent; 
+    }
+    .social-link {
+      width: 40px;
+      height: 40px;
+      background-size: 100%;
+    }
+  }
+  
+@media screen and (max-width: 320px) {
+    h1 {
+      font-sice: 1.2em;
+      background: rgba(0,0,0,.5);
+    }
+    /* body {
+      border: 10px solid blue;
+    } */
+    .hero {
+      padding: 2em 1em;
+    }
+  }
